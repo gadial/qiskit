@@ -467,6 +467,10 @@ circuits in the data.
 Version 18
 ----------
 
+QPY format version 18 corrects the encoding of integer and float ``INSTRUCTION_PARAM`` values
+to use big-endian byte order, consistent with the rest of the QPY specification. In QPY format
+versions 1–17 these values were mistakenly written in little-endian. Files written with QPY
+version 17 or earlier are still read correctly.
 
 .. _qpy_version_17:
 
